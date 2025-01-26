@@ -10,6 +10,11 @@ class Book(BaseModel):
 
 app = FastAPI()
 
+# add a get route to the app
+@app.get("/")
+async def root():
+    return {"message": "Welcome to Book API"}
+
 
 # Sample data
 books = [
