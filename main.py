@@ -15,6 +15,10 @@ app = FastAPI()
 def index():
     return "Hello World"
 
+@app.get("/about")
+def about():
+    return "About Page"
+
 # Sample data
 books = [
     Book(id=1, title="The Great Gatsby", author="F. Scott Fitzgerald", year=1925),
