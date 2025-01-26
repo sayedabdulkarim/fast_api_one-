@@ -10,14 +10,6 @@ class Book(BaseModel):
 
 app = FastAPI()
 
-## test
-@app.get("/")
-def index():
-    return "Hello World"
-
-@app.get("/about")
-def about():
-    return "About Page"
 
 # Sample data
 books = [
